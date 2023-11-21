@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: "Larsseit", sans-serif;
   margin: 0;
@@ -67,6 +71,7 @@ body {
 .about-us-list-item {
   display: inline-block;
   font-size: 32px;
+  min-height: 250px;
   font-weight: 700;
   width: calc(100% / 4);
   padding: 72px 54px;
@@ -208,25 +213,27 @@ body {
 
 .man-header {
   max-width: 217px;
-  min-height: 20px;
   font-size: 16px;
   font-weight: 400;
   color: #22356f;
   vertical-align: top;
-  margin-top: 103px;
   margin-bottom: 225px;
-  margin-left: 106px;
+}
+
+.man-information {
+  padding-left: 106px;
+  padding-right: 175px;
+  padding-top: 103px;
+  padding-bottom: 39px;
 }
 
 .man-text {
   max-width: 676px;
-  min-height: 215px;
   color: #22356f;
   font-size: 36px;
   font-weight: 700;
   vertical-align: top;
-  margin-left: 106px;
-  padding-bottom: 152px;
+  margin-bottom: 152px;
 }
 
 .man-help {
@@ -235,7 +242,7 @@ body {
   color: #fab63e;
   font-size: 16px;
   font-weight: 700;
-  padding-left: 106px;
+  padding-bottom: 42px;
 }
 
 .man-color {
@@ -247,74 +254,112 @@ body {
   display: inline-block;
 }
 
-.nigga {
+.contact-us-inner {
+  font-size: 0;
   background: #22356f;
 }
 
-.nigga-inner {
-  font-size: 0;
-}
-
-.photo-of-a-nigga {
+.contact-us-photo {
   vertical-align: top;
-  float: right;
+  width: 25%;
+  height: 780px;
 }
 
-.nigga-photo {
- max-width: 25%;
+.contact-us-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.nigga-header {
-  font-size: 64px;
-  font-weight: 700;
-  color: #fff;
-  vertical-align: top;
-  margin-left: 180px;
-  margin-bottom: 75px;
+.contact-us-information {
+  width: 75%;
+  padding: 103px 200px 42px 180px;
 }
 
-.nigga-information {
-  max-width: 75%;
-}
-
-.nigga-link {
+.contact-us-link {
   color: #fff;
   font-size: 16px;
   font-weight: 400;
-  vertical-align: top;
-  margin-top: 103px;
-  margin-left: 180px;
-  margin-right: 672px;
   margin-bottom: 230px;
 }
 
-.nigga-text {
+.contact-us-header {
+  font-size: 64px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 75px;
+}
+
+.contact-us-text {
   color: #fff;
   font-size: 36px;
   font-weight: 400;
-  vertical-align: top;
+  line-height: 200%;
+  margin-bottom: 75px;
 }
 
-.nigga-help {
+.contact-us-help {
   color: #62d0df;
   font-size: 16px;
   font-weight: 700;
 }
 
-.photo-of-a-nigga,
-.nigga-information {
+.contact-us-photo,
+.contact-us-information {
   display: inline-block;
 }
 
-.basement {
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
+.basement-inner {
+  font-size: 0;
 }
 
-.basement-text {
+.basement-photo {
+  width: 40%;
+}
+
+.basement-photo img {
+    width: 100%;
+}
+
+.basement-information {
+  width: 60%;
+  vertical-align: top;
+  padding: 98px 40px 99px 68px;
+}
+
+.contact-information-list {
+  font-size: 0;
+}
+
+.contact-information-list-item {
+  width: calc(100% / 3);
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 50px;
+}
+
+.contact-information-list-item .title {
   color: #22356F;
   font-size: 14px;
   font-weight: 700;
+  margin-bottom: 20px;
 }
+
+.contact-information-list-item .title-content {
+  color: rgba(34, 53, 111, 0.50);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.basement-photo,
+.basement-information {
+  display: inline-block;
+}
+
+.end {
+  background: #62D0DF;
+  padding: 32px 0;
+  color: #fff;
+}
+
